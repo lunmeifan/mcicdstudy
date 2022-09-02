@@ -81,7 +81,7 @@ jobs:
            # REMOTE_USER为登录机器时用到账号名
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           # 指定上传到部署机器的哪个目录下
-          TARGET: '/software/nginx/www'
+          TARGET: '/softwares/nginx/www'
   E2E-Test:
     uses: ./.github/workflows/e2e-test.yml
     needs: [CD]
