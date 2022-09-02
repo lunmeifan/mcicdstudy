@@ -4,6 +4,7 @@ on:
     branches: main
 jobs:
   CI:
+    # 将作业配置为在最新版本的 Ubuntu Linux 运行器上运行。 该作业将在 GitHub 托管的新虚拟机上执行。 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
